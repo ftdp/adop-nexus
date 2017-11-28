@@ -1,6 +1,6 @@
 #Supported tags and respective Dockerfile links
 
-- [`0.1.3`, `0.1.3` (*0.1.0/Dockerfile*)](https://github.com/Accenture/adop-nexus/blob/master/Dockerfile.md)
+- [`0.2.0`, `0.2.0` (*0.1.0/Dockerfile*)](https://github.com/Accenture/adop-nexus/blob/master/Dockerfile.md)
 
 # What is adop-nexus?
 adop-nexus is a wrapper for the sonatype/nexus image. It has primarily been built to perform extended configuration. Nexus® is an artifact repository manager.
@@ -87,7 +87,7 @@ Additionally, the image reads the following LDAP environment variables if you wa
  * `DEBUG_LOGGING`, defaults to false. If this is set to true, additional debug/access logs are enabled and sent to stdout/specified logging driver.
  * `MAX_HEAP`, passed as -Xmx. Defaults to 1g.
  * `MIN_HEAP`, passed as -Xms. Defaults to 256m.
- * `JAVA_OPTS`. Additional options can be passed to the JVM via this variable. Default: -server -XX:MaxPermSize=192m -Djava.net.preferIPv4Stack=true.
+ * `JAVA_OPTS`. Additional options can be passed to the JVM via this variable. Default: -server  -Djava.net.preferIPv4Stack=true.
  * `NEXUS_BASE_URL`, the nexus base URL
  * `NEXUS_PROXY_HOST`, the proxy server that connects to Maven public repository. This is used if the Nexus Docker host has strict firewall implementation.
  * `NEXUS_PROXY_PORT`, the proxy server port.
