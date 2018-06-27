@@ -5,9 +5,9 @@
   <anonymousUsername>anonymous</anonymousUsername>
   <anonymousPassword>{FJRGn3IAhjoHIOv//5FGl2BRdIZPsHeIurEPWaZV+1Y=}</anonymousPassword>
   <realms>
-    <realm>LdapAuthenticatingRealm</realm>
     <realm>XmlAuthenticatingRealm</realm>
     <realm>XmlAuthorizingRealm</realm>
+    <realm>LdapAuthenticatingRealm</realm>
   </realms>
   <hashIterations>1024</hashIterations>
 </security-configuration>
