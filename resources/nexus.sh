@@ -161,7 +161,10 @@ else
     # Delete LDAP realm
     sed -i "/LdapAuthenticatingRealm/d" ${NEXUS_HOME}/conf/security-configuration.xml
 fi
- 
+
+# changed the net.ipv4.tcp_keepalive_time value to 180 
+echo 180 > /write-proc/sys/net/ipv4/tcp_keepalive_time
+
 # chown the nexus home directory
 chown -R nexus:nexus ${NEXUS_HOME}
  
